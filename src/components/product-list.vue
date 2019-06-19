@@ -43,7 +43,7 @@ export default {
       for (var i = 0; i < this.products.length; i++) {
         var isShow = true;
         if (this.showUseVue && this.products[i].use !== 'Vue.js') {
-          isShow = false;  // この商品は表示しない
+          isShow = false;
         }
 
          if(this.sortYear === 1 && this.products[i].year === '2019') {
@@ -68,10 +68,6 @@ export default {
            }
          }
       }
-      // if (this.showUseVue && this.products[i].use === 'Vue.js') {
-      //   //「セール対象」チェック有りで、セール対象商品ではない場合
-      //   isShow = false;  // この商品は表示しない
-      // }
 
       return newList;
     }
